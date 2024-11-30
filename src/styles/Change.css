@@ -1,0 +1,48 @@
+.train{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    margin-top: 8em;
+}
+
+.train .trainer img{
+    width:1500px;
+    max-width:100%;
+}
+
+.change h1 span{
+    color: var(--main-color);
+}
+
+.change p{
+    padding-block: 2em;
+    line-height: 1.5;
+}
+
+@media (max-width:1110px){
+    .train{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .change{
+        padding-inline: 2em;
+        text-align: start;
+    width: 400px;
+    }
+
+    .train .trainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .train .trainer img{
+        width:500px;
+    }
+
+
+
+}

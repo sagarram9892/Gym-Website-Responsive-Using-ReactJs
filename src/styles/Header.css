@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+header .logo .logo_box {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 255, 0.573);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+header .logo:hover {
+    color: var(--main-color);
+}
+
+header .logo h3 {
+    font-size: 1.5rem;
+}
+
+header .logo .logo_box img {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 1.1em;
+}
+
+ul li a {
+    color: black;
+    font-weight: var(--font-weight);
+    transition: var(--transition);
+}
+
+ul li a:hover {
+    color: var(--main-color);
+}
+
+.menu {
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+
+@media (max-width:1110px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        background-color: navy;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        padding-block: 5vh;
+        z-index: 100;
+        transition: .5s;
+    }
+
+    ul.open {
+        top: 0;
+    }
+
+    ul.Close{
+        top: -100%;
+    }
+
+    ul li a {
+        color: #fff;
+    }
+
+    ul li a:hover {
+        color: #fff;
+    }
+
+    .register_btn {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 1em;
+    }
+
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding-right: 1em;
+    }
+
+    .close {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 1em;
+        top: 2em;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.34);
+        padding: 7px 10px;
+        border-radius: 50%;
+    }
+}

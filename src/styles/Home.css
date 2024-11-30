@@ -1,0 +1,260 @@
+.left {
+    text-align: start;
+    padding-top: 5em;
+}
+
+.content {
+    display: flex;
+    padding-top: 5em;
+    justify-content: space-between;
+}
+
+.left p {
+    padding-top: 2em;
+    line-height: 1.5;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.left h1 span {
+    color: var(--main-color);
+}
+
+.watch {
+    background-color: rgba(200, 200, 200, 0.79);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: var(--font-weight);
+    padding-inline: 5px;
+    transition: var(--transition);
+}
+
+.watch span {
+    font-size: 2em;
+    color: white;
+}
+
+.watch:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.div_1 {
+    height: 360px;
+    width: 360px;
+    border: 25px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.div_2 {
+    height: 312px;
+    width: 312px;
+    border: 25px solid rgba(0, 0, 255, 0.333);
+    border-radius: 50%;
+}
+
+.div_3 {
+    height: 263px;
+    width: 263px;
+    border: 25px solid rgba(0, 0, 255, 0.175);
+    border-radius: 50%;
+}
+
+.image {
+    position: relative;
+}
+
+.right .image .img {
+    position: absolute;
+    z-index: 10;
+    top: -40px;
+    left: -48px;
+}
+
+.right {
+    position: relative;
+}
+
+.dumble {
+    height: 50px;
+    width: 50px;
+    background-color: #d10b72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.dumble img {
+    width: 40%;
+}
+
+.location {
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px -5px 5px #00000036;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    z-index: 20;
+}
+
+.location .circle {
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location .circle .map {
+    font-size: 1.5em;
+    color: white;
+}
+
+.heart {
+    height: 140px;
+    width: 140px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.427);
+    position: absolute;
+    bottom: 80px;
+    left: -85px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.heart p {
+    font-weight: var(--font-weight);
+    font-size: 15px;
+}
+
+.heart .broken {
+    height: 40px;
+    width: 40px;
+    background-color: #0000ff47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.heart .broken .pulse {
+    color: red;
+    font-size: 1.3em;
+}
+
+@media (max-width:1110px) {
+
+    .location {
+        display: none;
+    }
+
+    .dumble{
+        display: none;
+    }
+
+    .heart{
+        display: none;
+    }
+
+    .left {
+        text-align: center;
+        padding-top: 4em;
+        padding-inline: 1.5em;
+    }
+
+    .left p {
+        padding-top: 1em;
+    }
+
+    .left .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.2em;
+    }
+
+    .left .watch {
+        padding: 4px;
+    }
+
+    .left .get {
+        padding: 12px;
+        font-weight: var(--font-weight);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div_1 {
+        height: 300px;
+        width: 300px;
+        border: 20px solid var(--main-color);
+        border-radius: 50%;
+    }
+
+    .div_2 {
+        height: 260px;
+        width: 260px;
+        border: 20px solid rgba(0, 0, 255, 0.333);
+        border-radius: 50%;
+    }
+
+    .div_3 {
+        height: 220px;
+        width: 220px;
+        border: 20px solid rgba(0, 0, 255, 0.175);
+        border-radius: 50%;
+    }
+
+    .image {
+        position: relative;
+    }
+
+    .right .image .img {
+        position: absolute;
+        z-index: 10;
+        top: 0px;
+        left: -42px;
+
+    }
+
+    .right .image .img img {
+        min-height: 200px;
+        max-width: 100%;
+
+    }
+
+
+}
